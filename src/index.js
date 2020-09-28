@@ -1,13 +1,9 @@
-document.addEventListener("DOMContentLoaded", taskSubmit());
+document.addEventListener("DOMContentLoaded", taskSubmission());
 
 const task = document.getElementById("new-task-description").value;
 const list = document.getElementById("list");
 
-function clickInterrupt(element) {
-  document.querySelector("#{")
-}
-
-function taskSubmit(element) {
+function taskSubmission(element) {
   document.querySelector(`${element}`).addEventListener("click", createTask(el), false);
 }
 
