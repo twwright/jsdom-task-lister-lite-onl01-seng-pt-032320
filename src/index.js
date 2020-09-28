@@ -4,8 +4,12 @@ function clickInterrupt(element) {
   document.querySelector("#")
 }
 
-function taskSubmit() {
+function taskSubmit(elemet) {
+  document.querySelector(`${element}`).addEventListener("click", createTask());
+}
 
+function createTask() {
+  
 }
 
 
