@@ -5,7 +5,7 @@ const list = document.getElementById("list");
 const newTaskElement = document.createElement("li");
 
 function taskSubmission(element) {
-  document.querySelector(`${element}`).addEventListener("click", createTask(el), false);
+  document.querySelector(`${element}`).addEventListener("click", createTask(action), false);
 }
 
 function createTask(action) {
