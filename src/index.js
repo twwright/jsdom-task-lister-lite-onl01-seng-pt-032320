@@ -1,15 +1,21 @@
 document.addEventListener("DOMContentLoaded", taskSubmit());
 
+const task = document.getElementById("new-task-description").value;
+const list = document.getElementById("list");
+
 function clickInterrupt(element) {
   document.querySelector("#")
 }
 
 function taskSubmit(elemet) {
-  document.querySelector(`${element}`).addEventListener("click", createTask());
+  document.querySelector(`${element}`).addEventListener("click", createTask(el), false);
 }
 
-function createTask() {
-  
+function createTask(el) {
+  el.preventDefault();
+  const taskElement = document.createElement("li");
+  taskElement.appendChild(document.createTextNode(task));
+  list.appendChild(taskElement);
 }
 
 
