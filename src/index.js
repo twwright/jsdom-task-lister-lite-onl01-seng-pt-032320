@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", taskSubmission());
 
 const task = document.getElementById("new-task-description").value;
 const list = document.getElementById("list");
+const taskElement = document.createElement("li");
 
 function taskSubmission(element) {
   document.querySelector(`${element}`).addEventListener("click", createTask(el), false);
@@ -9,7 +10,6 @@ function taskSubmission(element) {
 
 function createTask(el) {
   el.preventDefault();
-  const taskElement = document.createElement("li");
   taskElement.appendChild(document.createTextNode(task));
   list.appendChild(taskElement);
 }
