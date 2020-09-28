@@ -4,10 +4,10 @@ const task = document.getElementById("new-task-description").value;
 const list = document.getElementById("list");
 
 function clickInterrupt(element) {
-  document.querySelector("#")
+  document.querySelector("#{")
 }
 
-function taskSubmit(elemet) {
+function taskSubmit(element) {
   document.querySelector(`${element}`).addEventListener("click", createTask(el), false);
 }
 
