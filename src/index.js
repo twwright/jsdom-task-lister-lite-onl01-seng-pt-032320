@@ -8,8 +8,8 @@ function taskSubmission(element) {
   document.querySelector(`${element}`).addEventListener("click", createTask(el), false);
 }
 
-function createTask(el) {
-  el.preventDefault();
+function createTask(action) {
+  action.preventDefault();
   newTaskElement.appendChild(document.createTextNode(task));
   list.appendChild(taskElement);
 }
