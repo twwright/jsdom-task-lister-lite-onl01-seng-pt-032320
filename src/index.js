@@ -5,11 +5,11 @@ const list = document.getElementById("list");
 const newTaskElement = document.createElement("li");
 
 function taskSubmission(element) {
-  document.querySelector(`${element}`).addEventListener("click", createTask(action), false);
+  document.querySelector(`${element}`).addEventListener("click", createTask(event), false);
 }
 
-function createTask(action) {
-  action.preventDefault();
+function createTask(event) {
+  event.preventDefault();
   newTaskElement.appendChild(document.createTextNode(task));
   list.appendChild(taskElement);
 }
